@@ -28,7 +28,6 @@ def get_user_agents(items, ip: str):
 files_list = []
 for file in glob.glob("*access.log*"):
     files_list.append(file)
-
 log = []
 print(f'Loading file "{files_list[0]}". Please wait...')
 with open(files_list[0]) as csv_file:
